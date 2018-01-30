@@ -1,2 +1,12 @@
 @import "variables2";
 @import "main";
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+.brief {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+}

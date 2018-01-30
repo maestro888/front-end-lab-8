@@ -1,0 +1,24 @@
+$defFontColor: #ffffff;
+$bodyBg: rgba(198, 238, 252, 0.53);
+$contentBg: #3b3b3b;
+$formBg: $defFontColor;
+$headingColor: #fccd10;
+$linkColor: #f5c70f;
+
+$tableCaptionColor: #000000;
+$tableHeadBg: #94a34e;
+$tableHeadBorder: $defFontColor;
+$tableHeadColor: $tableCaptionColor;
+$tableBorder: $tableHeadBg;
+$tableBodyBg: #677d01;
+
+$formFontColor: #808080;
+$formLabelColor: $linkColor;
+$formBorderColor: $tableHeadBg;
+
+$formSubmitBorder: $linkColor;
+$formSubmitColor: $linkColor;
+$formSubmitBg: $contentBg;
+
+$blockquoteBg: #fff178;
+$blockquoteFontColor: $tableCaptionColor;

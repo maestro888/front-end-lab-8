@@ -1,0 +1,234 @@
+/* default variables */
+$defFontWeight: normal;
+$defFontSize: 1em;
+$defFontFamily: "Times New Roman", Times, serif;
+$defLineHeight: 1.2;
+
+/* default mixins */
+@mixin heading1() {
+    font-weight: bold;
+    color: $headingColor;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1;
+}
+
+@mixin heading2() {
+    font-weight: bold;
+    color: $headingColor;
+    margin-bottom: 25px;
+    text-align: left;
+    line-height: 1;
+}
+
+/* reset */
+* {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: transparent;
+    vertical-align: top;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow: auto;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    line-height: 1;
+    z-index: 0;
+
+    &::before {
+        content:"";
+        height: 100%;
+        float: left;
+        width: 0;
+        margin-top: -32767px;
+    }
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+/* default styles */
+body {
+    font: $defFontWeight $defFontSize $defFontFamily;
+    line-height: $defLineHeight;
+    background: $bodyBg;
+    color: $defFontColor;
+}
+
+h1 {
+    @include heading1;
+}
+
+h2 {
+    @include heading2;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+a {
+    color: $linkColor;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+img {
+    border: 2px solid $contentBg;
+    outline: 2px solid $headingColor;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Form elements */
+input[type=text], input[type=submit], input[type=email], input[type=number], textarea {
+    border: 1px solid $formBorderColor;
+    font-family: $defFontFamily;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    transition: all,0.25s;
+    background: $formBg;
+    letter-spacing: 0;
+    border-radius: 0;
+    outline-offset: 0;
+    font-size: 0.85em;
+    outline: none;
+}
+
+input[type=text], input[type=submit], input[type=email], input[type=number], textarea {
+    padding: 8px 8px;
+}
+
+input[type=text], input[type=email], input[type=number], textarea {
+    width: 100%;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+textarea {
+    background-attachment: local;
+    height: 180px !important;
+    width: 100% !important;
+    padding-top: 1px;
+    overflow: auto;
+}
+
+/* Custom style */
+.brief {
+    box-sizing: border-box;
+    width: 424px;
+    float: left;
+    padding: 20px;
+    background: $blockquoteBg;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: $blockquoteFontColor;
+}
+
+.img-left {
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+.img-right {
+    float: right;
+    margin: 0 0 10px 20px;
+}
+
+#content {
+    background: $contentBg;
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: 8px auto;
+    padding: 20px;
+}
+
+table {
+    margin-bottom: 20px;
+
+    caption {
+        color: $tableCaptionColor;
+        text-align: right;
+        font-weight: bold;
+    }
+
+    tr th {
+        text-transform: uppercase;
+        font-weight: normal;
+        color: $tableHeadColor;
+        background: $tableHeadBg;
+        padding: 10px 20px;
+        border-right: 1px solid $tableHeadBorder;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    tr {
+
+        td {
+            border-bottom: 1px solid $tableBorder;
+            background: $tableBodyBg;
+            padding: 10px 20px;
+        }
+    }
+}
+
+.form-item-wrap {
+    display: flex;
+
+    .form-item {
+        box-sizing: border-box;
+        width: 50%;
+
+        &:first-child {
+            padding-right: 5px;
+        }
+
+        &:last-child {
+            padding-left: 5px;
+        }
+    }
+}
+
+.form-item {
+    margin: 20px 0;
+}
+
+label {
+    color: $formLabelColor;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input[type=submit] {
+    border: 1px solid $formSubmitBorder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $formSubmitColor;
+    text-transform: uppercase;
+    background: $formSubmitBg;
+    width: 240px;
+}

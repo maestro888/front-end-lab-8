@@ -1,0 +1,267 @@
+/* default variables */
+/* default mixins */
+/* reset */
+/* line 25, scss/_main.scss */
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: transparent;
+  vertical-align: top;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 35, scss/_main.scss */
+html {
+  overflow: auto;
+}
+
+/* line 39, scss/_main.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 44, scss/_main.scss */
+body {
+  position: relative;
+  line-height: 1;
+  z-index: 0;
+}
+
+/* line 49, scss/_main.scss */
+body::before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+}
+
+/* line 58, scss/_main.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* default styles */
+/* line 63, scss/_main.scss */
+body {
+  font: normal 1em "Times New Roman", Times, serif;
+  line-height: 1.2;
+  background: rgba(198, 238, 252, 0.53);
+  color: #ffffff;
+}
+
+/* line 70, scss/_main.scss */
+h1 {
+  font-weight: bold;
+  color: #fccd10;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1;
+}
+
+/* line 74, scss/_main.scss */
+h2 {
+  font-weight: bold;
+  color: #fccd10;
+  margin-bottom: 25px;
+  text-align: left;
+  line-height: 1;
+}
+
+/* line 78, scss/_main.scss */
+p {
+  margin: 0 0 20px;
+}
+
+/* line 82, scss/_main.scss */
+a {
+  color: #f5c70f;
+}
+
+/* line 85, scss/_main.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 90, scss/_main.scss */
+img {
+  border: 2px solid #3b3b3b;
+  outline: 2px solid #fccd10;
+}
+
+/* line 95, scss/_main.scss */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Form elements */
+/* line 101, scss/_main.scss */
+input[type=text], input[type=submit], input[type=email], input[type=number], textarea {
+  border: 1px solid #94a34e;
+  font-family: "Times New Roman", Times, serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  transition: all,0.25s;
+  background: #ffffff;
+  letter-spacing: 0;
+  border-radius: 0;
+  outline-offset: 0;
+  font-size: 0.85em;
+  outline: none;
+}
+
+/* line 117, scss/_main.scss */
+input[type=text], input[type=submit], input[type=email], input[type=number], textarea {
+  padding: 8px 8px;
+}
+
+/* line 121, scss/_main.scss */
+input[type=text], input[type=email], input[type=number], textarea {
+  width: 100%;
+}
+
+/* line 125, scss/_main.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 129, scss/_main.scss */
+textarea {
+  background-attachment: local;
+  height: 180px !important;
+  width: 100% !important;
+  padding-top: 1px;
+  overflow: auto;
+}
+
+/* Custom style */
+/* line 138, scss/_main.scss */
+.brief {
+  box-sizing: border-box;
+  width: 424px;
+  float: left;
+  padding: 20px;
+  background: #fff178;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* line 149, scss/_main.scss */
+.img-left {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+/* line 154, scss/_main.scss */
+.img-right {
+  float: right;
+  margin: 0 0 10px 20px;
+}
+
+/* line 159, scss/_main.scss */
+#content {
+  background: #3b3b3b;
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: 8px auto;
+  padding: 20px;
+}
+
+/* line 167, scss/_main.scss */
+table {
+  margin-bottom: 20px;
+}
+
+/* line 170, scss/_main.scss */
+table caption {
+  color: #000000;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* line 176, scss/_main.scss */
+table tr th {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #000000;
+  background: #94a34e;
+  padding: 10px 20px;
+  border-right: 1px solid #ffffff;
+}
+
+/* line 184, scss/_main.scss */
+table tr th:last-child {
+  border-right: none;
+}
+
+/* line 191, scss/_main.scss */
+table tr td {
+  border-bottom: 1px solid #94a34e;
+  background: #677d01;
+  padding: 10px 20px;
+}
+
+/* line 199, scss/_main.scss */
+.form-item-wrap {
+  display: flex;
+}
+
+/* line 202, scss/_main.scss */
+.form-item-wrap .form-item {
+  box-sizing: border-box;
+  width: 50%;
+}
+
+/* line 206, scss/_main.scss */
+.form-item-wrap .form-item:first-child {
+  padding-right: 5px;
+}
+
+/* line 210, scss/_main.scss */
+.form-item-wrap .form-item:last-child {
+  padding-left: 5px;
+}
+
+/* line 216, scss/_main.scss */
+.form-item {
+  margin: 20px 0;
+}
+
+/* line 220, scss/_main.scss */
+label {
+  color: #f5c70f;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* line 227, scss/_main.scss */
+input[type=submit] {
+  border: 1px solid #f5c70f;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f5c70f;
+  text-transform: uppercase;
+  background: #3b3b3b;
+  width: 240px;
+}
+
+/* line 4, scss/style2.scss */
+table tr:last-child td {
+  border-bottom: none;
+}
+
+/* line 8, scss/style2.scss */
+.brief {
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 40px;
+}
+
+/*# sourceMappingURL=style2.css.map */

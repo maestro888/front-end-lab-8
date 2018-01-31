@@ -1,0 +1,202 @@
+/* reset */
+* {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: transparent;
+    vertical-align: top;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow: auto;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    line-height: 1;
+    z-index: 0;
+}
+
+body:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+/* default */
+body {
+    font: 400 1em 'Open Sans', sans-serif;
+    line-height: 1.4;
+    color: #000000;
+    min-width: 900px;
+}
+
+#page {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+header {
+    position: relative;
+    z-index: 3;
+}
+
+#content {
+    position: relative;
+    z-index: 2;
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1168px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #000000;
+    text-align: center;
+    line-height: 1;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2.2em;
+    color: #000000;
+    text-align: center;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 1.313em;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 1.4;;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #000000;
+    line-height: 1.28;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* form elements */
+.form-item {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+input[type=text], input[type=password], input[type=search], input[type=file], input[type=radio], input[type=checkbox], input[type=submit], textarea {
+    border: 1px solid #cccccc;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    transition: all, 0.25s;
+    background: #ffffff;
+    letter-spacing: 0;
+    border-radius: 0;
+    outline-offset: 0;
+    font-size: 0.85em;
+    outline: none;
+}
+
+input[type=text], input[type=password], input[type=search], input[type=file], input[type=submit], textarea {
+    padding: 8px 8px;
+}
+
+input[type=text], input[type=password], input[type=search], textarea {
+    width: 100%;
+}
+
+input[type=file] {
+    margin-right: 20px;
+}
+
+input[type=submit] {
+    cursor: pointer;
+}
+
+textarea {
+    background-attachment: local;
+    height: 180px !important;
+    width: 100% !important;
+    padding-top: 1px;
+    overflow: auto;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* menu */
+nav ul:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul li {
+    list-style-type: none;
+    float: left;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 15px;
+}
+
+/*
+* My custom styles
+*/

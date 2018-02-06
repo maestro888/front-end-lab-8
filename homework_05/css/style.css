@@ -1,0 +1,256 @@
+/* reset */
+* {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: transparent;
+    vertical-align: top;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow: auto;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    line-height: 1;
+    z-index: 0;
+}
+
+body:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+/* default */
+body {
+    font: 400 14px Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+    color: #000000;
+}
+
+#page {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+}
+
+header {
+    position: relative;
+    z-index: 3;
+}
+
+#content {
+    position: relative;
+    z-index: 2;
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #000000;
+    text-align: center;
+    line-height: 1;
+}
+
+h2 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.45em;
+    line-height: 1.75;
+    color: #252525;
+}
+
+h3 {
+    font-size: 1.313em;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 1.4;;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #000000;
+    line-height: 1.28;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.disabled {
+    display: none;
+}
+
+.img-responsive img {
+    width: 100%;
+    height: auto;
+}
+
+.view ul li {
+    list-style-type: none;
+}
+
+/* menu */
+nav ul {
+    margin: 0 -15px;
+}
+
+nav ul:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul li {
+    list-style-type: none;
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+/* grid */
+.container {
+    max-width: 859px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+[class*="col-"] {
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.col-1 {
+    flex: 0 0 8.3333%;
+    max-width: 8.3333%;
+}
+
+.col-2 {
+    flex: 0 0 16.6666%;
+    max-width: 16.6666%;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+
+.col-5 {
+    flex: 0 0 41.6666%;
+    max-width: 41.6666%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    flex: 0 0 58.3333%;
+    max-width: 58.3333%;
+}
+
+.col-8 {
+    flex: 0 0 66.6666%;
+    max-width: 66.6666%;
+}
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    flex: 0 0 83.3333%;
+    max-width: 83.3333%;
+}
+
+.col-11 {
+    flex: 0 0 91.6666%;
+    max-width: 91.6666%;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/*
+* My custom styles
+*/
+#page {
+    box-sizing: border-box;
+    margin-bottom: -56px;
+    padding-bottom: 56px;
+}
+
+/* header */
+
+/* Block main menu */
+
+/* main */
+
+/* footer */
+footer {
+    height: 56px;
+}

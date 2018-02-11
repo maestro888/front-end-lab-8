@@ -11,11 +11,11 @@ if (a <= 0 || b <= 0 || c <= 0 || isNaN(a) || isNaN(b) || isNaN(c)) {
     if (a >= b + c || b >= a + c || c >= a + b) {
         console.log('From the segments of such length it is impossible to form a triangle');
     } else {
-        alpha = Math.round(Math.acos((Math.pow(b, 2) + Math.pow(c, 2) - Math.pow(a, 2)) / (2 * b * c)) * (180 / Math.PI) * 100) / 100;
-        beta = Math.round(Math.acos((Math.pow(a, 2) + Math.pow(c, 2) - Math.pow(b, 2)) / (2 * a * c)) * (180 / Math.PI) * 100) / 100;
+        alpha = Math.round(Math.acos((b * b + c * c - a * a) / (2 * b * c)) * (180 / Math.PI) * 100) / 100;
+        beta = Math.round(Math.acos((a * a + c * c - b * b) / (2 * a * c)) * (180 / Math.PI) * 100) / 100;
         gamma = Math.round((180 - (alpha + beta)) * 100) / 100;
 
-        if (alpha == 60) {
+        if (alpha == 60 && beta == 60) {
             type = 'Equilateral triangle';
         } else if (alpha == 90 || beta == 90 || gamma == 90) {
             type = 'Right triangle';

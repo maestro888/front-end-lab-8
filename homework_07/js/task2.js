@@ -21,11 +21,11 @@ if (!message) {
         range = range * 2;
         startPrise = startPrise * 3;
         randomNum = Math.floor(Math.random() * (range + 1));
-        // console.log('Random no '+ randomNum);
+        console.log('Random no '+ randomNum);
 
         for (;attempt <= 3;) {
-            info = 'Round: ' + round +
-                '\nAttempts left: ' + attempt +
+            info = 'Enter a number from 0 to ' + range +
+                '\nAttempts left: ' + (4 - attempt) +
                 '\nTotal prize: ' + totalPrize + '$' +
                 '\nPossible prize: ' + prize + '$';
 

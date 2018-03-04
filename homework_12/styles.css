@@ -1,0 +1,134 @@
+/* reset */
+* {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background-color: transparent;
+    vertical-align: top;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow: auto;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    line-height: 1;
+    z-index: 0;
+}
+
+body:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+/* default styles */
+.img-responsive img {
+    width: 100%;
+    height: auto;
+}
+
+.view ul li {
+    list-style-type: none;
+}
+
+/* grid */
+.container {
+    max-width: 859px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+[class*="col-"] {
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.col-1 {
+    flex: 0 0 8.3333%;
+    max-width: 8.3333%;
+}
+
+.col-2 {
+    flex: 0 0 16.6666%;
+    max-width: 16.6666%;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+
+.col-5 {
+    flex: 0 0 41.6666%;
+    max-width: 41.6666%;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    flex: 0 0 58.3333%;
+    max-width: 58.3333%;
+}
+
+.col-8 {
+    flex: 0 0 66.6666%;
+    max-width: 66.6666%;
+}
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    flex: 0 0 83.3333%;
+    max-width: 83.3333%;
+}
+
+.col-11 {
+    flex: 0 0 91.6666%;
+    max-width: 91.6666%;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* custom styles */
+body {
+    background: #cccccc;
+}
+
+#root {
+    overflow: hidden;
+}

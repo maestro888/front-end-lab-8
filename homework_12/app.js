@@ -24,8 +24,6 @@ function renderPageAllTanks(obj) {
 
     html += '</ul></div>';
 
-    openTankSettings('view--tanks');
-
     return html;
 }
 
@@ -37,7 +35,7 @@ function renderPageCurrentTank(obj, item) {
     window.location.hash = el.model.toLowerCase().replace(/ /g, '-');
 
     html = '<div class="tank-details">';
-    html += '<h1><img src="' + el.country_image + '"> ' + el.model + ' (level ' + el.level + ')</h1>';
+    html += '<h1><img src="' + el.country_image + '"> ' + el.model.toUpperCase() + ' (level ' + el.level + ')</h1>';
 
     html +=
         '<div class="row">' +
@@ -82,28 +80,31 @@ function renderHtml(fn) {
     tmp.innerHTML = fn;
     tmp = tmp.firstChild;
     rootNode.appendChild(tmp);
+
+    return rootNode;
 }
 
 function openTankSettings(id) {
     let ul = document.getElementById(id);
+    let li = ul.getElementsByTagName('li');
 
-    if (ul) {
-        let li = ul.getElementsByTagName('li');
+    for (let i = 0; i < li.length; i++) {
 
-        for (let i = 0; i < li.length; i++) {
-
-            li[i].onclick = function() {
-                rootNode.innerHTML = '';
-                renderHtml(renderPageCurrentTank(tanks, i));
-            }
+        li[i].onclick = function() {
+            rootNode.innerHTML = '';
+            renderHtml(renderPageCurrentTank(tanks, i));
         }
     }
+
+    return false;
 }
 
 function backToPrev() {
     rootNode.innerHTML = '';
     renderHtml(renderPageAllTanks(tanks));
     openTankSettings('view--tanks');
+
+    return false;
 }
 
 renderHtml(renderPageAllTanks(tanks));

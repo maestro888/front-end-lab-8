@@ -4,7 +4,7 @@ function renderPageAllTanks(obj) {
     let el, html, i;
 
     window.location.hash = '';
-    html = '<div class="thumbnails view">';
+    html = '<div class="thumbnails view container">';
     html += '<h1>Most popular tanks</h1><ul id="view--tanks" class="row">';
 
     for (i in obj) {
@@ -15,7 +15,7 @@ function renderPageAllTanks(obj) {
         html +=
             '<div class="field--image img-responsive"><img src="' + el.preview + '" alt=""></div>' +
             '<div class="description">' +
-                '<span class="field--country"><img src="' + el.country_image + '"></span> ' +
+                '<span class="field--country"><img src="' + el.country_image + '" title="' + el.country.toUpperCase() + '" alt=""></span> ' +
                 '<span class="field--model">' + el.model + '</span>' +
             '</div>';
 
@@ -34,8 +34,8 @@ function renderPageCurrentTank(obj, item) {
     settings = renderTankSettings(el.details);
     window.location.hash = el.model.toLowerCase().replace(/ /g, '-');
 
-    html = '<div class="tank-details">';
-    html += '<h1><img src="' + el.country_image + '"> ' + el.model.toUpperCase() + ' (level ' + el.level + ')</h1>';
+    html = '<div class="tank-details container">';
+    html += '<h1><img src="' + el.country_image + '" title="' + el.country.toUpperCase() + '" alt=""> ' + el.model.toUpperCase() + ' (level ' + el.level + ')</h1>';
 
     html +=
         '<div class="row">' +
